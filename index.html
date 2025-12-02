@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Crypto Monte Carlo AI - Live</title>
     <meta name="description" content="Kripto para piyasası için Monte Carlo simülasyonu ve AI destekli analiz aracı." />
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (CDN kullanımı devam ediyor, Vite projesinde normalde postcss kullanılır ama bu haliyle de çalışır) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
         height: 100vh;
         overflow-x: hidden;
       }
-      /* Custom animations usually found in tailwind.config but added here for CDN usage compatibility */
+      /* Custom animations */
       @keyframes progress-indeterminate {
         0% { transform: translateX(-100%) scaleX(0.2); }
         50% { transform: translateX(0%) scaleX(0.5); }
@@ -41,14 +41,13 @@
     "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
     "react/": "https://aistudiocdn.com/react@^19.2.0/",
     "recharts": "https://aistudiocdn.com/recharts@^3.5.1",
-    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1",
     "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
     "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
-    "vite": "https://aistudiocdn.com/vite@^7.2.6"
+    "vite": "https://aistudiocdn.com/vite@^7.2.6",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.1"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body>
     <div id="root"></div>
