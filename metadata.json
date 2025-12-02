@@ -1,0 +1,5 @@
+{
+  "name": "crypto-oracle-ai-live",
+  "description": "Real-time Crypto Monte Carlo simulation with AI insights using Gemini API.",
+  "requestFramePermissions": []
+}
